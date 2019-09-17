@@ -1,0 +1,93 @@
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+div:focus {
+	outline:none;
+	box-shadow:none;
+}
+.scroll-pane {
+	width:auto;
+	height:100% !important;
+}
+.jspContainer {
+	position: relative;
+	width:100%;
+	outline:none !important;
+}
+.jspPane {
+	position: absolute;
+	padding:0 !important;
+	width:100% !important;
+	left:0 !important;
+}
+.jspVerticalBar {
+	position: absolute;
+	top: 0;
+	bottom:0;
+	right: 0;
+	width: 0 !important;
+}
+.jspHorizontalBar {display:none;
+}
+.jspVerticalBar *,
+.jspHorizontalBar *
+{
+	margin: 0;
+	padding: 0;
+}
+.jspCap {display: none;
+}
+.jspHorizontalBar .jspCap {	float: left;
+}
+.jspTrack {
+	background-color:transparent;
+	background-image:none;
+	position: relative;
+	bottom:0;
+}
+
+.jspDrag {
+	background-color:transparent;
+	border-radius:0;
+	-webkit-border-radius:0;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
+
+.jspArrow {text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+
+.jspArrow.jspDisabled {cursor: default;
+}
+
+.jspVerticalBar .jspArrow {
+	height: 0;
+	display:none;
+}
+
+.jspCorner
+{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}
